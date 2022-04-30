@@ -1,0 +1,351 @@
+* {padding: 0; margin: 0; box-sizing: border-box; color: var(--primary);}
+
+:root {
+    --primary-light: #8abdff;
+    --primary: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    --white: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
+  }
+
+body {
+    background: var(--greyLight-1);
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.parent {
+  height: 100%;
+  display: flex;
+}
+
+
+/* ?================================   Birthday calculate section  ========================================================= */
+
+.wrapper{
+    padding: 10px;
+    width:350px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 220px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    padding: 0 15px 0 20px;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+    background: none;
+    font-family: inherit;
+    color: var(--greyDark);
+}
+/* ========================================================== */
+.check {
+    float: right;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    color: var(--greyLight-1);
+    box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-light), inset -0.2rem -0.2rem 1rem var(--primary-dark);
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .check:hover {
+    color: var(--white);
+  }
+  .check:active {
+    box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark), inset -0.2rem -0.2rem 1rem var(--primary-light);
+  }
+/* * ======================== Your age ==================================== */
+
+.age_information {
+    margin-top: 10px;
+    width: 330px;
+    height: inherit;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3em;
+    padding: 10px;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+    background: none;
+    font-family: inherit;
+    color: var(--greyDark);
+}
+.next_birthday1, .age1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70px;
+}
+
+/* * =========== SUMMARY ============== */
+.answer {
+    margin-top: 10px;
+    border: none;
+    width: 330px;
+    border-radius: 10px;
+    font-size: 1.3em;
+    /* padding: 10px; */
+    box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+    background: none;
+    font-family: inherit;
+    color: var(--greyDark);
+}
+h4 {
+  margin-top: 10px;
+  margin-left: 35%;
+  line-height: 30px;
+  font-size: larger;
+}
+#answer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 4px;
+  padding: 0 12px 8px 0;
+}
+#age1, #month1, #week1 {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#day1, #hour1, #minute1 {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pages {
+  display: flex; 
+  justify-content: space-around;
+  width: 330px;  
+  margin: 10px;
+}
+.pages_button {
+  margin: 10px;
+}
+.pages_button_a {
+  border-radius: 8px;
+  background: var(--primary);
+  color: var(--greyLight-1);
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-light), inset -0.2rem -0.2rem 1rem var(--primary-dark);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+.pages_button_a:hover {
+    color: var(--greyDark);
+  }
+  .pages_button_a:active {
+    box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark), inset -0.2rem -0.2rem 1rem var(--primary-light);
+  }
+/* ?=====================================  Section Famous  ======================================================== */
+
+.section {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+  margin-top: 10px;
+  border: none;
+  width: 55vw;
+  height: 97vh;
+  border-radius: 10px;
+  font-size: 1.3em;
+  padding: 15px;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+  background: none;
+  font-family: inherit;
+  color: var(--greyDark);
+  overflow: auto;
+
+}
+
+.MyCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: none;
+  border: none;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-title {
+  font-size: 1.3em;
+}
+
+.card-img-top {
+  width: 95%;
+  margin-top: 5px;
+  border-radius: 10px;
+  background: none;
+}
+
+.span {
+  font-size: 1.3em;
+  border: none;
+  background: none;
+  padding: 0 2px 0 5px;
+  color: #7f8aa4;
+
+}
+
+.a {
+  color: var(--greyDark);
+  font-size: 1.3em;
+  text-decoration: none;
+  font-style: italic;
+}
+
+/*?===================  Aside Section  ================================= */
+
+.aside {
+    margin: 10px;
+    width: 330px;
+    height: inherit;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+    background: none;
+    font-family: inherit;
+    color: var(--greyDark);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+}
+
+h5 {
+  grid-column: 1/3;
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-style: italic;
+  padding: 0 30px;
+  
+}
+
+.button {
+  padding: 12px;
+  line-height: 100%;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary);
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-light), inset -0.2rem -0.2rem 1rem var(--primary-dark);
+  color: var(--greyLight-1);
+  font-size: 1.6em;
+  cursor: pointer;
+  transition: 0.3s ease;
+  user-select: none;
+}
+
+/*?=================== Response Media ===================================================================== */
+
+@media(max-width: 800px) {
+  .parent {
+    width: auto;
+  }
+  
+  .wrapper{
+    width: 220px;
+}
+
+input{
+    width: 150px;
+    height: 30px;
+    font-size: 1rem;
+}
+/* * ========================================================== */
+.check {
+  font-size: .8em;
+  width: 45px;
+  height: 28px;
+  }
+/* * ======================== Your age ==================================== */
+
+.age_information {
+    width: 200px;
+    font-size: 1em;
+}
+.next_birthday1, .age1 {
+  height: 50px;
+}
+
+/* * =========== SUMMARY ============== */
+.answer {
+    width: 200px;
+    font-size: 1em;
+}
+h4 {
+  margin: 4px 0;
+  margin-left: 29%;
+}
+#age1, #month1, #week1, #day1, #hour1, #minute1 {
+  height: 50px;
+}
+.pages {width: 200px;margin: 15px 0;}
+.pages_button {
+  margin: 0;
+}
+.pages_button_a {
+  margin: 1px;
+  padding: 2px;
+}
+/* ?=====================================  Section Famous  ======================================================== */
+
+.section {
+  width: 68vw;
+  min-height: 97vh;
+  max-height: 100vh;
+  font-size: 1em;
+  padding-bottom: 20px;
+}
+.card-title {
+  font-size: 1.1em;
+  margin-top: 6px;
+}
+.a {color: var(--primary-light);}
+
+/*?===================  Aside Section  ================================= */
+
+.aside {
+  position: absolute;
+  display: block;
+  top: 380px;
+  width: 200px;
+  height: 640px;
+}
+
+h5 {
+  line-height: 30px;
+  margin: -6px 0 10px 0;
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  margin: 4px 0;
+}
+
+
+
+
+
+}

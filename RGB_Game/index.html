@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>RGB Game</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+
+            <div class="ch">Ch</div>
+            <div class="o">o</div>
+            <div class="oo">o</div>
+            <div class="s">s</div>
+            <div class="e">e</div>
+
+            <div class="the">the</div>
+
+            <div class="color">color</div>
+    
+        </div>
+        <div class="right">
+            <div class="rgb">
+
+            </div>
+            <div class="level">
+                <div class="lifes"><h3>Your life</h3><div class="life">8</div></div>
+                <div class="lifes"><h3>Your Score</h3><div class="score">0</div></div>
+            </div>
+            <!-- <div class="icons">
+                <ion-icon name="heart-outline" class="icon"></ion-icon>
+                <ion-icon name="heart-outline" class="icon"></ion-icon>
+                <ion-icon name="heart-outline" class="icon"></ion-icon>
+                <ion-icon name="heart-outline" class="icon"></ion-icon>
+                <ion-icon name="heart-outline" class="icon"></ion-icon>
+                <ion-icon name="heart-outline" class="icon"></ion-icon>
+                <ion-icon name="heart-outline" class="icon"></ion-icon>
+                <ion-icon name="heart-outline" class="icon"></ion-icon>
+            </div> -->
+            <div class="btn" onclick="start()">
+                START
+            </div>
+        </div>
+</header>
+
+    <div class="over">
+        <h1>Game Over</h1>
+        <div class="lifes"><h3>Your Score</h3><div id="score">0</div></div>
+        <div class="btn" onclick="restart()">RESTART</div>
+    </div>
+    <div id="root">
+        
+    </div>
+
+
+    <div class="pages">
+        <div class="pages_button">
+            <a class="pages_button_a" href="../index.html">Home page</a>
+        </div>
+        <div class="pages_button">
+            <a class="pages_button_a" href="../Birthday/index.html">Birthday Calculator </a>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
