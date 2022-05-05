@@ -2,21 +2,36 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
 }
-
-.hero {
+body {
+  width: 100vw;
   height: 100vh;
-  width: 100%;
-  /* background-image: url(1563812599194.jpg); */
-  /* background-size: cover; */
-  /* background-position: center; */
+  overflow-x: hidden;
+}
+.hero {
+  height: 100%;
+  width: 100;
   background: #4568DC;
   /* fallback for old browsers */
   background: -webkit-gradient(linear, left top, right top, from(#243878), to(#59355a));
   background: linear-gradient(to right, #243878, #59355a);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 400px;
+  height: 500px;
+  border-radius: 50px;
+  background-image: url(Creator.jpg);
+  background-size: 135%;
+  background-position-x: -66px;
+  background-position-y: -40px;
+  box-shadow: inset 0 0 10em;
 }
 
 span {
@@ -24,7 +39,7 @@ span {
 }
 
 .content {
-  position: absolute;
+  position: relative;
   top: 8%;
   left: 8%;
 }
@@ -143,8 +158,7 @@ button:hover {
 .title h2 {
   color: white;
   font-size: 75px;
-  width: 1130px;
-  margin: 30px auto;
+  margin: 30px 220px;
 }
 
 .box {
@@ -163,6 +177,10 @@ button:hover {
 .card {
   height: 365px;
   width: 335px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   padding: 20px 35px;
   background: #191919;
   border-radius: 20px;
@@ -176,15 +194,24 @@ button:hover {
   font-size: 50px;
   display: block;
   text-align: center;
-  margin: 25px 0;
+  margin: 11px 0;
   color: #f9004d;
 }
 
 h5 {
+  margin-top: 15px;
   color: white;
   font-size: 23px;
   margin-bottom: 15px;
 }
+/* .pra {
+  /* height: 70%; */
+  /* width: 100%; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #000; */
+/* }  */
 
 .pra p {
   color: #fcfc;
@@ -219,4 +246,47 @@ h5 {
   font-size: 4.5em;
   color: #f9004d;
 }
-/*# sourceMappingURL=style.css.map */
+
+/*?==============  Responsive Design 500px ========================  */
+
+@media(max-width:500px) {
+  .hero::before {
+    top: 5%;
+    right: 4%;
+    width: 130px;
+    height: 190px;
+    border-radius: 10px;
+    background-position-x: -16px;
+    background-position-y: -8px;
+    box-shadow: inset 0 0 2em;
+    
+  }
+  .content {
+    top: 4%;
+  }
+  .h1 {font-size: 2em;}
+  .newsletter {
+    width: 250px;
+  }
+  .newsletter form input:last-child {
+    width: 35%;
+    padding: 10px;
+  }
+  .about-text {
+    width: 400px;
+    margin-top: 100px;
+  }
+  .about-text h2 {font-size: 2em;}
+  .service {
+    padding: 10px 0;
+  }
+  
+  .title h2 {
+    font-size: 2.5em;
+    margin: 30px 0;
+    text-align: center;
+  }
+  .box {
+    flex-direction: column;
+  }
+}

@@ -5,6 +5,11 @@
   margin: 0;
   background-color: #111;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 :root {
   --primary-light: #8abdff;
   --primary: #6d5dfc;
@@ -15,8 +20,9 @@
 .pages {
   position: absolute;
   display: flex; 
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100vw;
+  bottom: 5vh;
 }
 .pages_button {
   margin: 10px;
@@ -45,7 +51,10 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 100vw;
+  margin: 6px;
+  width: 98vw;
+  background-color: #112;
+  border-radius: 10px;
   border: 3.5px solid black;
 }
 
@@ -55,8 +64,9 @@ header {
   display: flex;
   height: inherit;
   width: 25%;
-  border: 4px 4px 0 4px solid black;
-  border-radius: 99% 99% 0px 0px;
+  background-color: transparent;
+  /* border: 4px 4px 0 4px solid black; */
+  /* border-radius: 99% 99% 0px 0px; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -69,28 +79,34 @@ header {
 
 .header .ch {
   color: red;
+  background-color: transparent;
 }
 
 .header .o {
   color: yellow;
+  background-color: transparent;
 }
 
 .header .oo {
   color: lime;
+  background-color: transparent;
 }
 
 .header .s {
   color: cyan;
+  background-color: transparent;
 }
 
 .header .e {
   color: blue;
   margin-right: 10px;
+  background-color: transparent;
 }
 
 .header .the {
   color: magenta;
   margin-right: 10px;
+  background-color: transparent;
 }
 
 @supports (--css: variables) {
@@ -99,6 +115,7 @@ header {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    padding: 0 10px;
   }
 }
 
@@ -130,6 +147,7 @@ header {
       justify-content: space-around;
   width: 75%;
   color: #fff;
+  background-color: transparent;
 }
 
 .right .rgb {
@@ -141,20 +159,24 @@ header {
           align-items: center;
   font-size: 2.5em;
   color: #fff;
+  background-color: transparent;
 }
 
 .right .rgb .r {
   color: #f00;
+  background-color: transparent;
 }
 
 .right .rgb .g {
   color: #0f0;
+  background-color: transparent;
 }
 
 .right .rgb .b {
   color: #00f;
+  background-color: transparent;
 }
-
+.rgbcode {background-color: transparent;}
 .btn {
   font-size: 2em;
   color: #5befff;
@@ -187,7 +209,7 @@ header {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
-.level {display: flex;}
+.level {display: flex;background-color: transparent;}
 .lifes {
   display: flex;
   flex-direction: column;
@@ -243,4 +265,11 @@ h1 {
     font-size: 1.2em;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+@media(max-width: 500px) {
+  #root {
+    width: 100vw;
+    height: 40vh;
+  }
+
+}

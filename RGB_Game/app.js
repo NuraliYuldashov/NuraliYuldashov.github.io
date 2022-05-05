@@ -35,7 +35,7 @@ function start(level = 3){
         let random = Math.floor(Math.random() * arr.length)
         arr[random].isTrue = true
         let outHeader =    `
-        <div class="color">(${arr[random].color})</div>
+        <div class="rgbcode">(${arr[random].color})</div>
         `
         document.querySelector('.rgb').innerHTML = `
                                                         <div class="r">R</div>
