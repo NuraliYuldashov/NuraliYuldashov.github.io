@@ -251,7 +251,7 @@ h5 {
 
 @media(max-width:500px) {
   .hero::before {
-    top: 5%;
+    top: 3%;
     right: 4%;
     width: 130px;
     height: 190px;
@@ -269,7 +269,6 @@ h5 {
     width: 150px;
   }
   .content h3 {
-    margin-top: 40px;
     width: 150px;
   }
   .h1 {font-size: 2em;}
@@ -281,8 +280,10 @@ h5 {
     padding: 10px;
   }
   .about-text {
+    position: absolute;
+    top: 99%;
     width: 90%;
-    margin-top: 95px;
+    /* margin-top: 95px; */
     font-size: 5em;
   }
   /* .about-text h2 {font-size: 2em;} */
