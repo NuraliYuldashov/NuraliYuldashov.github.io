@@ -1,0 +1,52 @@
+/*?==============  Responsive Design 500px ========================  */
+
+@media(max-width:500px) {
+    .hero::before {
+      top: 3%;
+      right: 4%;
+      width: 130px;
+      height: 190px;
+      border-radius: 10px;
+      background-position-x: -16px;
+      background-position-y: -8px;
+      box-shadow: inset 0 0 2em;
+      
+    }
+    .content {
+      top: 4%;
+      width: 300px;
+    }
+    .content h1 {
+      width: 150px;
+    }
+    .content h3 {
+      width: 150px;
+    }
+    .h1 {font-size: 2em;}
+    .newsletter {
+      width: 110%;
+    }
+    .newsletter form input:last-child {
+      width: 30%;
+      padding: 10px;
+    }
+    .about-text {
+      width: 90%;
+      font-size: 5em;
+    }
+    .about-text p {
+        margin-bottom: auto;
+    }
+    .service {
+      padding: 10px 0;
+    }
+    
+    .title h2 {
+      font-size: 2.5em;
+      margin: 30px 0;
+      text-align: center;
+    }
+    .box {
+      flex-direction: column;
+    }
+  }
