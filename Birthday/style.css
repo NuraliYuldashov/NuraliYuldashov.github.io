@@ -1,4 +1,4 @@
-* {padding: 0; margin: 0; box-sizing: border-box; color: var(--primary);}
+* {padding: 0; margin: 0; box-sizing: border-box;}
 
 :root {
     --primary-light: #8abdff;
@@ -44,6 +44,7 @@ input{
     background: none;
     font-family: inherit;
     color: var(--greyDark);
+    
 }
 /* ========================================================== */
 .check {
@@ -145,11 +146,49 @@ h4 {
   transition: 0.2s ease;
 }
 .pages_button_a:hover {
-    color: var(--greyDark);
-  }
-  .pages_button_a:active {
-    box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark), inset -0.2rem -0.2rem 1rem var(--primary-light);
-  }
+  color: var(--greyDark);
+}
+.pages_button_a:active {
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark), inset -0.2rem -0.2rem 1rem var(--primary-light);
+}
+.parent_dark {
+  position: relative;
+  width: 250px;
+  height: 60px;
+  /* background-color: #7f8aa4; */
+  margin: 10px 42px;
+}
+.parent_dark .dark {
+  display: flex;
+  width: 85px;
+  font-size: 1.4em;
+  background-color: #6d5dfc;
+  color: var(--greyLight-3);
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-light), inset -0.2rem -0.2rem 1rem var(--primary-dark);
+  /* padding: 5px 10px; */
+  border-radius: 10px;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 400ms;
+}
+.dark:hover {
+  color: var(--greyDark);
+}
+.dark:active {
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark), inset -0.2rem -0.2rem 1rem var(--primary-light);
+}
+.day {
+  display: flex;
+  align-items: center;
+  background-color: #e6b000;
+  padding: 30px 12px;
+  margin-left: 150px;
+  height: 80px;
+  border-radius: 50%;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 400ms;  
+}
 /* ?=====================================  Section Famous  ======================================================== */
 
 .section {

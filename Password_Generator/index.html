@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="root">
+            <div class="h1">
+                <h1 class="password">Password Generator</h1>
+                <div class="pass">
+                    <h2 id="password"></h2>
+                </div>
+            </div>
+        <div class="getPassword">
+            <div class="minN">
+                Min
+                <input class="number minMax" type="number" value="8" id="min">
+            </div>
+            <div class="minN">
+                Max
+                <input class="number minMax" type="number" value="16" id="max">
+            </div>
+            <button id="copy">Copy</button>
+        </div>
+        <div class="label">
+            <div id="label">
+                <label><input onclick="addOptions()" type="checkbox" checked class="check" value="number" />1 2 3 4 5 6 7 8 9 0</label>
+                <label><input onclick="addOptions()" type="checkbox" class="check" value="letter" />A B C D E F G H I K L M N O P Q R S T V W X Y Z</label>
+                <label style="text-transform: lowercase;"><input onclick="addOptions()" type="checkbox" class="check" value="small" />A B C D E F G H I K L M N O P Q R S T V W X Y Z</label>
+                <label><input onclick="addOptions()" type="checkbox" class="check" value="symbol" /> ~ ! @ # $ % ^ & * ( ) _ - + = , . / < > ? ; ' : " [ { ] } |</label>
+            </div>
+        </div>
+        
+        <button class="generate" onclick="getPassword()">Generate</button>
+
+        <div class="pages">
+            <div class="pages_button">
+                <a class="pages_button_a" href="../index.html">Home page</a>
+            </div>
+            <div class="pages_button">
+                <a class="pages_button_a" href="../Birthday/index.html">Birthday Calculator </a>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>

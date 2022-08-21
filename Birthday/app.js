@@ -226,13 +226,30 @@ function filterByMoth(value){
 // var r = document.styleSheets[1].cssRules[1].style[4]
 // console.log(r)
 
+let tgl = true
 
-// document.documentElement.style.setProperty("--primary-dark", "#5526ad");
-// document.documentElement.style.setProperty("--primary", "#342c79");
-// document.documentElement.style.setProperty("--primary-light", "#2b4567");
-// document.documentElement.style.setProperty("--greyLight-1", "#14171e");
-// document.documentElement.style.setProperty("--greyDark", "#3e4c6e");
-// document.documentElement.style.setProperty("--greyLight-2", "#222");
-// document.documentElement.style.setProperty("--white", "#444");
-
+const theme = () => {
+    let dark = document.querySelector('.day')
+    dark.classList.toggle('dark')
+    tgl = !tgl
+    console.log(tgl)
+    if(tgl === false) {
+        document.documentElement.style.setProperty("--primary-dark", "#5526ad");
+        document.documentElement.style.setProperty("--primary", "#342c79");
+        document.documentElement.style.setProperty("--primary-light", "#2b4567");
+        document.documentElement.style.setProperty("--greyLight-1", "#14171e");
+        document.documentElement.style.setProperty("--greyDark", "#3e4c6e");
+        document.documentElement.style.setProperty("--greyLight-2", "#222");
+        document.documentElement.style.setProperty("--white", "#444");
+    }
+    else {
+        document.documentElement.style.setProperty("--primary-dark", "#5b0eeb");
+        document.documentElement.style.setProperty("--primary", "#6d5dfc");
+        document.documentElement.style.setProperty("--primary-light", "#8abdff");
+        document.documentElement.style.setProperty("--greyLight-1", "#E4EBF5");
+        document.documentElement.style.setProperty("--greyDark", "#9baacf");
+        document.documentElement.style.setProperty("--greyLight-2", "#c8d0e7");
+        document.documentElement.style.setProperty("--white", "#fff");
+    }
+}
 
